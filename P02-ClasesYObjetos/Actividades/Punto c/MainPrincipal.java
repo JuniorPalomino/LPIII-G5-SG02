@@ -30,33 +30,32 @@ public class PrimerProyecto {
         
         System.out.println(fido.toString());
         System.out.println(pelusa.toString());
-    //Punto B
+        //Punto B
         Diagnostico Mascotas= new Diagnostico();
         Mascotas.aptoVacunaB(pelusa);
         System.out.println("Ingrese la temperatura del perro ");
         Mascotas.aptoVacunaB(fido);
+        
+        //Punto c
+        Scanner sc =new Scanner(System.in); 
+
         System.out.println("Ingrese la temperatura del perro "); 
-    //Punto C
 
-        Scanner Inicio =new Scanner(System.in); 
+        fido.setTemp(sc.nextDouble()); 
 
-        System.out.println("Ingrese la temperatura del perro "); 
+        System.out.println("Ingrese la edad del perro "); 
 
-        fido.setTemp(Inicio.nextDouble()); 
-
-        //System.out.println("Ingrese la edad del perro "); 
-
-        //fido.setEdad(s1.nextInt());
+        fido.setEdad(sc.nextInt());
         
        
 
-        //System.out.println("Ingrese el peso del perro "); 
+        System.out.println("Ingrese el peso del perro "); 
 
-        //fido.peso=s1.nextDouble(); 
+        fido.peso=sc.nextDouble(); 
 
-        //Diagnostico d=new Diagnostico(); 
+        Diagnostico d=new Diagnostico(); 
 
-        //d.aptoVacunaB(fido); 
+        d.aptoVacunaB(fido); 
 
         
         
