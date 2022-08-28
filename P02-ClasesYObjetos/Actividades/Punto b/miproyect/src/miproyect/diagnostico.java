@@ -8,14 +8,15 @@ package miproyect;
  *
  * @author Alumno
  */
+//////////----PUNTO B----////////
 public class diagnostico  {
 
-    public void aptoVacunA(perro p) {
-        aptoVacunaB(p);
+    public void aptoVacunaA(perro p) {
+        aptoVacunaB(p.peso, p.getEdad(), p.getTemp());
     }
 
-    public void aptoVacunaB(perro p) {
-        if (p.getTemp() >= 37 && p.getTemp() <= 40 && p.peso > 5 && p.getEdad() > 1) {
+    public void aptoVacunaB(double peso, int edad, double temp) {
+        if (temp >= 37 && temp <= 40 && peso > 5 && edad > 1) {
             System.out.println("DIAGNOSTICO: El perro esta sano");
         } else {
             System.out.println("DIAGNOSTICO: El perro esta enfermo");

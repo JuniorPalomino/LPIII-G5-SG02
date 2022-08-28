@@ -8,8 +8,8 @@ package miproyect;
  *
  * @author Alumno
  */
-
 public class perro {
+
     private String raza;
     private String color;
     private double temp;
@@ -60,22 +60,26 @@ public class perro {
     public String toString() {
         return "perro{" + "raza=" + raza + ", color=" + color + ", temp=" + temp + ", edad=" + edad + ", peso=" + peso + '}';
     }
-    
- public void ladrar(){
- System.out.println("Guau Guau");
- }
- public void dormir(){
- System.out.println("zzz zzzz");
- }
- public void comer(){
- System.out.println("pka pka");
- }
- public void increEdad(int anios){
- this.edad = this.edad + anios;
- cambiarPeso(anios);
- }
- private void cambiarPeso(int anios){
- this.peso = this.peso + (anios * 1.5);
- }
-    
+
+    public void ladrar() {
+        System.out.println("Guau Guau");
+    }
+
+    public void dormir() {
+        System.out.println("zzz zzzz");
+    }
+
+    public void comer() {
+        System.out.println("pka pka");
+    }
+
+    public void increEdad(int anios) {
+        this.edad = this.edad + anios;
+        cambiarPeso(anios);
+    }
+
+    private void cambiarPeso(int anios) {
+        this.peso = this.peso + (anios * 1.5);
+    }
+
 }

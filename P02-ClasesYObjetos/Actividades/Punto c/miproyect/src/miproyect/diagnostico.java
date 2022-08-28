@@ -8,6 +8,7 @@ package miproyect;
  *
  * @author Alumno
  */
+//////////----PUNTO B----////////
 public class diagnostico  {
 
     public void aptoVacunaA(perro p) {

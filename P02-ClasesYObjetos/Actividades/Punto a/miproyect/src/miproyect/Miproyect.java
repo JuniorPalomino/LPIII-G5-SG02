@@ -15,39 +15,70 @@ public class Miproyect {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //////////----PUNTO A----////////
         perro fido =new perro("chihuahua", "pekines");
         fido.increEdad(2);
+        System.out.println("--------FIDO--------");
         System.out.println(fido.getRaza());
         System.out.println(fido.getColor());
         System.out.println(fido.getEdad());
+        System.out.println("--------DATOS COMPLETOS --------");
+        System.out.println(fido.toString());
  
         perro pelusa =new perro("pequines","blanco");
+        System.out.println("--------PELUSA--------");
         pelusa.increEdad(6);
         System.out.println(pelusa.getRaza());
-        System.out.println(pelusa.getEdad());
         System.out.println(pelusa.getColor());
+        System.out.println(pelusa.getEdad());
+        System.out.println("--------DATOS COMPLETOS --------");
+        System.out.println(pelusa.toString());
         
-        //Punto B
-        diagnostico Mascotas= new diagnostico();
-        Mascotas.aptoVacunaB(pelusa);
-        System.out.println("Ingrese la temperatura del perro ");
-        Mascotas.aptoVacunaB(fido);
-        System.out.println("Ingrese la temperatura del perro "); 
+        //////////----PUNTO B----////////
         
-        //Punto c
-        Scanner sc =new Scanner(System.in); 
-
-        System.out.println("Ingrese la temperatura del perro "); 
-
-        fido.setTemp(sc.nextDouble()); 
-
-        System.out.println("Ingrese la edad del perro "); 
-
-        fido.setEdad(sc.nextInt());
+        //diagnostico Mascotas= new diagnostico();
+        //System.out.println("--------DIAGNOSTICO DE FIDO --------");
+        //Mascotas.aptoVacunaA(fido);
+        //System.out.println("--------DIAGNOSTICO DE PELUSA --------");
+        //Mascotas.aptoVacunaA(pelusa);
+  
         
-        System.out.println("Ingrese el peso del perro "); 
+       //////////----PUNTO C----////////
+       //System.out.println("--------INGRESO DE DATOS PARA EL NUEVO DIAGNOSTICO DE FIDO --------");
+       // Scanner sc =new Scanner(System.in); 
+        
+       // System.out.println("Ingrese el peso del perro: "); 
 
-        fido.peso=sc.nextDouble(); 
+        //fido.peso=sc.nextDouble();
+        
+       // System.out.println("Ingrese la edad del perro: "); 
+
+       // fido.setEdad(sc.nextInt());
+
+        //System.out.println("Ingrese la temperatura del perro: "); 
+
+        //fido.setTemp(sc.nextDouble()); 
+        
+        //Mascotas.aptoVacunaB(fido.peso, fido.getEdad(), fido.getTemp());
+        
+        
+        //System.out.println("--------INGRESO DE DATOS PARA EL NUEVO DIAGNOSTICO DE PELUSA --------");
+        
+        //System.out.println("Ingrese el peso del perro: "); 
+
+        //pelusa.peso=sc.nextDouble();
+        
+        //System.out.println("Ingrese la edad del perro: "); 
+
+        //pelusa.setEdad(sc.nextInt());
+
+        //System.out.println("Ingrese la temperatura del perro: "); 
+
+        //pelusa.setTemp(sc.nextDouble()); 
+        
+        //Mascotas.aptoVacunaB(pelusa.peso, pelusa.getEdad(), pelusa.getTemp());
+        
+        
     }
     
 }
