@@ -18,7 +18,7 @@ public class Fecha {
         this.dia = dia;
         this.mes = mes;
         this.year = year;
-        
+        valida();
     }
 
     public Fecha() {
@@ -35,6 +35,7 @@ public class Fecha {
         mes = sc.nextInt();
         System.out.println("Ingrese el anio: ");
         year = sc.nextInt();
+        valida();
     }
 
     public boolean bisiesto() {
